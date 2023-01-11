@@ -1,7 +1,44 @@
 import React from "react";
+import Button, { ButtonType, ButtonSize } from "./components/Button/button";
 
-function App() {
-  return <div></div>;
-}
+const App: React.FC = () => {
+  return (
+    <div>
+      <Button
+        className="test"
+        onClick={(e) => {
+          e.preventDefault();
+          alert("test test");
+        }}
+      >
+        {" "}
+        Default Button
+      </Button>
+      <Button disabled> Disabled Button</Button>
+      <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
+        Primary & Large
+      </Button>
+      <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
+        Danger & Small
+      </Button>
+      <Button
+        btnType={ButtonType.Link}
+        href="http://www.google.com.au"
+        target="_blank"
+      >
+        link
+      </Button>
+
+      <Button
+        size={ButtonSize.Large}
+        btnType={ButtonType.Link}
+        href="http://www.google.com.au"
+        disabled
+      >
+        disabled link
+      </Button>
+    </div>
+  );
+};
 
 export default App;
