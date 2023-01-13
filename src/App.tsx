@@ -1,9 +1,25 @@
 import React from "react";
 import Button, { ButtonType, ButtonSize } from "./components/Button/button";
+import Menu from "./components/Menu/menu";
+import MenuItem from "./components/Menu/menuItem";
 
 const App: React.FC = () => {
   return (
     <div>
+      <Menu
+        defaultIndex={0}
+        onSelect={(index) => {
+          alert(index);
+        }}
+        mode={"vertical"}
+      >
+        <MenuItem index={0}>link1</MenuItem>
+
+        <MenuItem index={1}>link2</MenuItem>
+
+        <MenuItem index={2}>link3</MenuItem>
+      </Menu>
+
       <Button
         className="test"
         onClick={(e) => {
