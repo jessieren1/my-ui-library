@@ -2,6 +2,7 @@ import React from "react";
 import Button, { ButtonType, ButtonSize } from "./components/Button/button";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
+import SubMenu from "./components/Menu/subMenu";
 
 const App: React.FC = () => {
   return (
@@ -13,11 +14,17 @@ const App: React.FC = () => {
         }}
         mode={"vertical"}
       >
-        <MenuItem index={0}>link1</MenuItem>
+        <MenuItem>link1</MenuItem>
 
-        <MenuItem index={1}>link2</MenuItem>
+        <MenuItem disabled>link2</MenuItem>
 
-        <MenuItem index={2}>link3</MenuItem>
+        <MenuItem>link3</MenuItem>
+
+        <SubMenu title="dropdown">
+          <MenuItem>dropdown1</MenuItem>
+          <MenuItem>dropdown2</MenuItem>
+          <MenuItem>dropdown3</MenuItem>
+        </SubMenu>
       </Menu>
 
       <Button
