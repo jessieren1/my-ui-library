@@ -13,6 +13,7 @@ const App: React.FC = () => {
           alert(index);
         }}
         mode={"vertical"}
+        defaultOpenSubMenus={["3"]}
       >
         <MenuItem>link1</MenuItem>
 
