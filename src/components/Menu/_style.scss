@@ -52,7 +52,7 @@
       }
     }
     .test-submenu {
-      display: none;
+      // display: none; //because us the CSSTransition in subMenu.tsx
       list-style: none;
       padding-left: 0;
       white-space: nowrap;
@@ -69,7 +69,7 @@
       }
     }
     .test-submenu.menu-opened {
-      display: block;
+      // display: block; //because us the CSSTransition in subMenu.tsx
     }
 }
 

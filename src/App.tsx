@@ -8,13 +8,13 @@ import Icon from "./components/Icon/icon";
 const App: React.FC = () => {
   return (
     <div>
-      {/* <Icon icon="code" theme="primary" size="5x"></Icon> */}
+      <Icon icon="laptop-code" theme="dark" size="5x"></Icon>
       <Menu
         defaultIndex="0"
         onSelect={(index) => {
           alert(index);
         }}
-        mode={"vertical"}
+        // mode={"vertical"}
         defaultOpenSubMenus={["3"]}
       >
         <MenuItem>link1</MenuItem>
