@@ -5,6 +5,14 @@ import { Button, ButtonSize, ButtonType } from "./button";
 
 export default {
   title: "Button Component",
+  parameters: {
+    info: {
+      text: `
+     xxxxxx
+      `,
+      inline: true,
+    },
+  },
   component: Button,
 } as ComponentMeta<typeof Button>;
 
